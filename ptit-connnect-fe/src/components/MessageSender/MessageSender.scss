@@ -1,0 +1,114 @@
+@import "../../assets/scss/_variables.scss";
+
+.messageSender {
+  display: flex;
+  margin: 1rem auto 0 auto;
+  padding-top: 30px;
+  flex-direction: column;
+  background-color: $backgroundComponent !important;
+  border-radius: 1rem;
+
+  width: 70%;
+}
+.messageSender__top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eff2f5b9;
+  padding: 15px;
+}
+
+.messageSender__top > form {
+  flex: 1;
+  display: flex;
+}
+
+.messageSender__top > form > input {
+  outline-width: 0;
+  border: none;
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 999px;
+  background-color: transparent;
+
+  box-shadow:
+    rgba(255, 255, 255, 0.4) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.messageSender__top > form > button {
+  display: none;
+}
+
+.messageSender__input {
+  padding: 15px !important;
+  font-size: 1.4rem;
+  color: $textColor !important;
+  flex: 1;
+}
+
+.messageSender__bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.messageSender__option {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $textColor;
+  margin: 5px;
+  padding: 1.4rem 0;
+}
+
+.messageSender__option > h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.messageSender__option {
+  svg {
+    font-size: 2.4rem;
+  }
+}
+
+.messageSender__option:hover {
+  cursor: pointer;
+  background-color: $hoverBackground;
+  border-radius: 20px;
+}
+
+body.light {
+  .messageSender {
+    box-shadow:
+      rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+    background-color: $backgroundComponentLightMode !important;
+  }
+  .messageSender__top > form > input {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .messageSender__top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.214);
+    padding: 15px;
+  }
+
+  .messageSender__input {
+    color: $textColorLightMode !important;
+  }
+
+  .messageSender__option {
+    color: $textColorLightMode;
+  }
+
+  .messageSender__option:hover {
+    cursor: pointer;
+    background-color: $hoverBackgroundLightMode;
+    border-radius: 20px;
+  }
+}

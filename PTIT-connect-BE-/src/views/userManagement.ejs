@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User management</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Profile Name</th>
+            <th>Role</th>
+            <th>Action</th>
+        </tr>
+        <% for(let i=0; i<data.length; i++) { %>
+            <tr>
+                <td>
+                    <%= data[i].id %>
+                </td>
+                <td>
+                    <%= data[i].firstName %>
+                </td>
+                <td>
+                    <%= data[i].lastName %>
+                </td>
+                <td>
+                    <%= data[i].profileName %>
+                </td>
+                <td>
+                    <%= data[i].role %>
+                </td>
+                <td style="text-align: center;">
+                    <a href="/edit-user?id=<%= data[i].id %>" class="btn-edit" type="button">
+                        Edit
+                    </a>
+                    <a href="/delete-user?id=<%= data[i].id %>" class="btn-delete" type="button">Delete</a>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+</body>
+
+</html>

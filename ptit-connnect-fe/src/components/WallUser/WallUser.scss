@@ -1,0 +1,122 @@
+@import "../../assets/scss/_variables.scss";
+
+.wall-user {
+    color: white;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    .wall-info-user {
+        margin-top: 3rem;
+        .user-info {
+            display: flex;
+            align-items: flex-start;
+            .detail {
+                margin-left: 2rem;
+                .user {
+                    display: flex;
+                    align-items: center;
+                    &-name {
+                        font-size: 2.6rem;
+                        font-weight: 400;
+                    }
+                    .btn-follow,
+                    .btn-message {
+                        outline: none;
+                        border: none;
+                        border-radius: 0.8rem;
+                        color: white;
+                        background-color: #363636;
+                        padding: 0.8rem 2.4rem;
+                        font-size: 1.6rem;
+                        margin-left: 1.2rem;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            margin-left: 0.2rem;
+                            font-size: 2rem;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .statics {
+                    margin-top: 2.2rem;
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        font-size: 1.6em;
+                        li {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .feed {
+    //     margin: 2rem auto 0 0;
+    // }
+}
+body.light {
+    .wall-user {
+        color: $textColorLightMode;
+        height: 100%;
+        width: 70%;
+        margin: auto;
+        .wall-info-user {
+            margin-top: 3rem;
+            .user-info {
+                display: flex;
+                align-items: flex-start;
+                .detail {
+                    margin-left: 2rem;
+                    .user {
+                        display: flex;
+                        align-items: center;
+                        &-name {
+                            font-size: 2.6rem;
+                            font-weight: 400;
+                        }
+                        .btn-follow,
+                        .btn-message {
+                            outline: none;
+                            border: none;
+                            border-radius: 0.8rem;
+                            color: white;
+                            background-color: #363636;
+                            padding: 0.8rem 2.4rem;
+                            font-size: 1.6rem;
+                            margin-left: 1.2rem;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            svg {
+                                margin-left: 0.2rem;
+                                font-size: 2rem;
+                            }
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .statics {
+                        margin-top: 2.2rem;
+                        ul {
+                            list-style-type: none;
+                            display: flex;
+                            font-size: 1.6em;
+                            li {
+                                margin-right: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // .feed {
+        //     margin: 2rem auto 0 0;
+        // }
+    }
+}

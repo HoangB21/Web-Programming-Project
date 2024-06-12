@@ -1,0 +1,57 @@
+@import "../../assets/scss/_variables.scss";
+
+.wrapper-login {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: center;
+        filter: blur(0px);
+    }
+    .login {
+        color: white !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        h3 {
+            text-align: center;
+            font-weight: 400 !important;
+            font-size: 6rem;
+            color: white;
+            -webkit-text-stroke: 2px black;
+        }
+        .form-login {
+            margin-top: 0.6rem;
+            color: black;
+            background-color: #fff;
+            width: 100%;
+            input,
+            label {
+                font-size: 1.6rem;
+            }
+            a {
+                color: #1976d2;
+                text-decoration: none;
+                font-size: 1.4rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            button,
+            span,
+            p {
+                font-size: 1.6rem;
+            }
+            .error {
+                color: #d32f2f;
+                text-align: center;
+            }
+        }
+    }
+}

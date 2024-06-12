@@ -1,0 +1,37 @@
+@import "../../assets/scss/_variables.scss";
+
+.box_search {
+    margin-top: 1rem;
+    & > * {
+        color: $textColor !important;
+    }
+    svg {
+        color: white;
+    }
+    .search_input {
+        color: $textColor;
+        background-color: #18191a;
+    }
+}
+body.light {
+    .box_search {
+        & > * {
+            color: $textColorLightMode !important;
+        }
+        .search_input {
+            color: $textColorLightMode;
+            background-color: white;
+        }
+        input,
+        label {
+            color: $textColorLightMode !important;
+        }
+    }
+    .search_result_paper {
+        background-color: $backgroundComponentLightMode !important;
+    }
+    .MuiAutocomplete-noOptions {
+        background-color: $backgroundComponentLightMode !important;
+        color: $textColorLightMode !important;
+    }
+}
